@@ -17,9 +17,11 @@
 	<title>Photo Hour of Code</title>
 </head>
 <body>
+	        
+	        <center><h1 style="color:red;background-color:black">Galerie photos Hour of Code</h1> </center>
 
    
-	<div id="demo" class="carousel slide" data-ride="carousel">
+	<div id="demo" class="carousel slide" data-ride="carousel" style="background-color:lightGrey">
 
   <!-- Indicators -->
   <ul class="carousel-indicators">
