@@ -17,11 +17,11 @@
 	<title>Photo Hour of Code</title>
 </head>
 <body>
-	        
+	        <div class="jumbotron">
 	        <center><h1 style="color:red;background-color:black">Galerie photos Hour of Code</h1> </center>
-
+            </div>
    
-	<div id="demo" class="carousel slide" data-ride="carousel" style="background-color:lightGrey">
+	<div id="demo" class="carousel slide" data-ride="carousel" style="background-color:white">
 
   <!-- Indicators -->
   <ul class="carousel-indicators">
@@ -33,52 +33,13 @@
     <li data-target="#demo" data-slide-to="5"></li>
     <li data-target="#demo" data-slide-to="6"></li>
   </ul>
-  
-  <!-- The slideshow -->
-<!--   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <center>
-      <img src="{{ asset('img/'.$chemin[0]->chemin)}}" alt="Photo HOfC AYS" width="600" height="600">
-          </center>
-    </div>
-     <div class="carousel-item">
-      <center>
-      <img src="{{ asset('img/'.$chemin[1]->chemin)}}" alt="Photo HOfC DA" width="600" height="600">
-  		</center>
-    </div> -->
-    <!--<div class="carousel-item">
-      <center>
-      <img src="{{ asset('img/hakd.jpg')}}" alt="Photo H Of C HAKD" width="600" height="600">
-        </center>
-    </div>
-  </div>
-  <div class="carousel-item">
-  	  <center>
-      <img src="{{ asset('img/sa.jpeg')}}" alt="Photo H Of C SA" width="600" height="600"/>
-        </center>
-    </div>
-  </div>
-  <div class="carousel-item">
-  	  <center>
-      <img src="{{ asset('img/kl.jpeg')}}" alt="Photo H Of C KL" width="600" height="600">
-         </center>
-    </div>
-  </div>
-  <div class="carousel-item">
-  	  <center>
-      <img src="{{ asset('img/mmkj.jpeg')}}" alt="Photo H Of C MMKJ" width="600" height="600">
-         </center>
-    </div>
-  </div>
-  <div class="carousel-item">
-  	  <center>
-      <img src="{{ asset('img/pizza.jpeg')}}" alt="Photo H Of C Pizza" width="600" height="600">
-        </center>
-    </div> -->
+
+    <!-- foreach de laravel pour afficher le carousel avec toutes les photos -->
     @foreach ($chemin as $element)
 	    @if($element->id == 1)
 	    	<div class="carousel-item active">
   	 			<center>
+  	 				<!-- asset(): Fonction qui gènere une url du dossier public-->
      				<img src="{{ asset('img/'.$element->chemin)}}" alt="{{$element->chemin}}" width="600" height="600">
         		</center>
     		</div>
