@@ -1,0 +1,13 @@
+.jumbotron h1{
+	color:red;
+	background-color:black;
+}
+
+img{
+	border: 5px lightGrey solid;
+	border-radius: 5px 5px;
+}
+
+.slide{
+	background-color:white;
+}

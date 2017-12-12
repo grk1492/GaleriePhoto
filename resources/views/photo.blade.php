@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/style.css')}}">
 
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -18,10 +19,10 @@
 </head>
 <body>
 	        <div class="jumbotron">
-	        <center><h1 style="color:red;background-color:black">Galerie photos Hour of Code</h1> </center>
+	        <center><h1>Galerie photos Hour of Code</h1> </center>
             </div>
    
-	<div id="demo" class="carousel slide" data-ride="carousel" style="background-color:white">
+	<div id="demo" class="carousel slide" data-ride="carousel" >
 
   <!-- Indicators -->
   <ul class="carousel-indicators">
